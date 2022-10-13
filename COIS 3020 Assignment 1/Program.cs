@@ -46,7 +46,10 @@ namespace COIS_3020_Assignment_1
             airportMap.AddRoute(airportMap.FindAirportName("Winnipeg"), airportMap.FindAirportName("Calgary"));
             airportMap.AddRoute(airportMap.FindAirportName("Calgary"), airportMap.FindAirportName("Vancouver"));
             
-
+            airportMap.AddRoute(airportMap.FindAirportName("Vancouver"), airportMap.FindAirportName("Montreal"));
+            airportMap.AddRoute(airportMap.FindAirportName("Calgary"), airportMap.FindAirportName("Montreal"));
+            airportMap.AddRoute(airportMap.FindAirportName("Montreal"), airportMap.FindAirportName("Ottawa"));
+            
             // print out all the airports
             Console.WriteLine(airportMap.ToString());
 
