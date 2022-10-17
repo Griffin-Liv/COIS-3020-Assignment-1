@@ -15,8 +15,8 @@ namespace COIS_3020_Assignment_1
         //Constructor
         public AirportNode(string name, string code)
         {
-            this.name = name;
-            this.code = code;
+            this.name = name.ToUpper();
+            this.code = code.ToUpper();
             this.destinations = new List<AirportNode>();
         }
 
@@ -107,6 +107,8 @@ namespace COIS_3020_Assignment_1
         //find airport by name
         public AirportNode FindAirportName(string name)
         {
+            name = name.ToUpper();
+
             //iterate though all the nodes
             foreach (AirportNode node in nodes)
             {
@@ -122,6 +124,7 @@ namespace COIS_3020_Assignment_1
 
         public AirportNode FindAirportCode(string code)
         {
+            code = code.ToUpper();
             //iterate though all the nodes
             foreach (AirportNode node in nodes)
             {
